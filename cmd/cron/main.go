@@ -17,8 +17,6 @@ func main() {
 
 	classes := velocityInstance.GetClasses(cfg.Unit.ID, time.Now())
 
-	fmt.Println(classes)
-
 	// Filter classes based on config and previous execution results
 
 	// Possible: Resolve seats

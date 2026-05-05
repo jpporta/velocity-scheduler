@@ -2,7 +2,8 @@ package utils
 
 type DayOfWeek int
 const (
-	Sunday DayOfWeek = iota
+	Unset DayOfWeek = iota
+	Sunday
 	Monday
 	Tuesday
 	Wednesday
