@@ -32,7 +32,7 @@ func (v Velocity) GetClasses(unitId int, from time.Time) []VelocityClasses {
 	params := url.Values{}
 	params.Add("page", "1")
 	params.Add("date_from", from.Format(time.DateOnly))
-	params.Add("sort", "date_from")
+	params.Add("sort", "start_time")
 	params.Add("is_canceled", "false")
 	params.Add("date_to", nextMonth.Format(time.DateOnly))
 	params.Add("unit_list", strconv.Itoa(unitId))
